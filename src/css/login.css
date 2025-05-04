@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.auto-text{
+    color:#172E6E;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.login-container{
+    background: #172E6E;
+    color:azure;
+}
+/* .bg-image{
+    background-image: url('/node_modules/ndpcbackground.png');
+    /* background-repeat: no-repeat; */
+    /*background-size: cover;
+    background-position: center;
+} */

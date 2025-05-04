@@ -1,0 +1,25 @@
+.navbar{
+    background-color: #0A3A84;
+    height: 80px;
+}
+.img-fluid{
+    max-height: 75px;
+    border-radius: 9px;
+    
+}
+.logo-div{
+    width: 215px;
+    height: auto;
+    border-radius:9px;
+    
+}
+
+.container-fluid{
+    --bs-gutter-x: 9rem !important;
+}
+.image-fluid{
+    width: 180px;
+    height: auto;
+    border-radius: 9px;
+    padding: 0;
+}

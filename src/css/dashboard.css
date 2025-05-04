@@ -1,0 +1,21 @@
+.thead-info tr th{
+    background-color: #0A3A84 !important;
+    color: #ffffff !important
+}
+
+tr td {
+    color:#0A3A84 !important;
+}
+.table-scripted {
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  .table-scripted th,
+  .table-scripted td {
+    width: 16.66%;
+  }
+   
+  span{
+    color: #0A3A84;
+  }
