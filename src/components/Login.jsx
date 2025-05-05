@@ -1,9 +1,25 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import {AuthContext} from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const{ setIsLogin } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const validEmail = 'sagar@gmail.com';
+    const validPassword = 'sagar';
+
+    const handleLogin =(e)=>{
+        e.preventDefault();
+        if(email===validEmail&&password===validPassword){
+            setIsLogin(true);
+            navigate('/dashboard');
+        }else{
+            alert("failed");
+        }
+    }
 
     return (
         <section className="vh-100">
@@ -33,15 +49,21 @@ function Login() {
                         <div className='login-wrapper d-flex justify-content-center align-items-center w-50 h-75 '>
                             <div className='w-75'>
                                 <h1 className="text-left mb-4">Login</h1>
-                                <form className='d-flex flex-column gap-0'>
+                                <form className='d-flex flex-column gap-0' onSubmit={handleLogin}>
                                     <p className='text-white text-bold'>Sign in to Your Account</p>
                                     <div className='mb-4'>
-                                        <label for="Email" className="form-label">Email address</label>
-                                        <input type="email" placeholder="Enter Email" className="form-control" id="Email" aria-describedby="emailHelp"></input>
+                                        <label htmlFor="Email" className="form-label">Email address</label>
+                                        <input type="email" placeholder="Enter Email" className="form-control" 
+                                        value={email}
+                                        onChange={(e)=>{setEmail(e.target.value)}}
+                                        id="Email" aria-describedby="emailHelp"></input>
                                     </div>
                                     <div className='mb-4'>
-                                        <label for="Password" className="form-label">Password</label>
-                                        <input type="password" placeholder="Enter Password" className="form-control" id="Password"></input>
+                                        <label htmlFor="Password" className="form-label">Password</label>
+                                        <input type="password" placeholder="Enter Password" 
+                                        value={password}
+                                        onChange={(e)=>{setPassword(e.target.value)}}
+                                        className="form-control" id="Password"></input>
                                     </div>
                                     <button className='btn btn-danger w-100 mt-4'>Login</button>
                                 </form>

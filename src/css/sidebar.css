@@ -13,6 +13,11 @@ ul li:hover{
 }
 ul li ul li:hover{
     cursor: pointer;
-    background-color: #d3c8c5;
+    background-color: #e6f0ff;
     border-radius: 9px;
+}
+.nav-link.active {
+    color: var(--primary-color);
+    background-color: rgba(11, 60, 141, 0.1);
+    border-left-color: var(--primary-color);
 }

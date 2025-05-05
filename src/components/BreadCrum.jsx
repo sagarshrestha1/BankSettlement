@@ -6,7 +6,13 @@ const breadcrumbNameMap = {
     'edit': 'Edit Bank',
     'settlements':'Settlements',
     'addsettlement': 'Add Settlement',
-    'editsettlement': 'Edit Settlement'
+    'editsettlement': 'Edit Settlement',
+    'editRole':'Edit Role',
+    'addRole':'Add Role',
+    'edituser':'Edit User',
+    'addUser':'Add User',
+    'rolemanagement':'Role Management',
+    'usermanagement':'User Management'
 };
 
 const Breadcrumbs = () => {
