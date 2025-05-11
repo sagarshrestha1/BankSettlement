@@ -5,6 +5,7 @@ import Footer from './Footer';
 import { useContext } from 'react';
 import { AuthContext } from '../context/AuthContext';
 import '../css/login.css';
+import '../css/sidebar.css';
 
 
 const Layout = () => {

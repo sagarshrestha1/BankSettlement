@@ -3,9 +3,6 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useState } from 'react';
-
-
-
 function Navigation() {
     const [activeItem, setActiveItem] = useState(0);
     const handleItemClick = (itemId) => {
@@ -74,25 +71,10 @@ function Navigation() {
                     borderRadius: '9px',
                     padding: '4px'
                 }} onClick={() => handleItemClick(0)}>
-                    <a className="navlink nav-link px-2 d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#submenu2" role="button" aria-expanded="false" aria-controls='submenu1'>
-                        <span className="d-none d-sm-inline">Bank Account Management </span><FontAwesomeIcon icon={faChevronDown} style={{ color: '#0A3A84 ' }}></FontAwesomeIcon>
+                    <a className="navlink nav-link px-2 d-flex justify-content-between align-items-center"  href="/linkbank" >
+                        <span className="d-none d-sm-inline">Bank Account  </span>
                     </a>
-                    <div className="collapse ps-3" id="submenu2">
-                        <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
-                            <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
-                                borderRadius: '9px',
-                                padding: '4px'
-                            }}>
-                                <a href="/linkbank" className="nav-link"><span className="d-none d-sm-inline">Linked Bank </span></a></li>
-                            <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
-                                borderRadius: '9px',
-                                padding: '4px'
-                            }} >
-                                <a href="/linkbank/add" className="nav-link"><span className="d-none d-sm-inline">Add Bank </span></a></li>
-                        </ul>
-                    </div>
+                    
                 </li>
                 <li className="nav-item m-1" style={{
                     border: '1px solid #C1CAD7',

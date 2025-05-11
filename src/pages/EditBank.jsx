@@ -40,7 +40,15 @@ function EditBank() {
                                         <label for="inputAccountNumber" className="col-form-label">Account Number:</label>
                                     </div>
                                     <div class="col-4">
-                                        <input type="password" id="inputAccountNumber" className="form-control" placeholder="12341234"></input>
+                                        <input type="text" id="inputAccountNumber" className="form-control" placeholder="12341234"></input>
+                                    </div>
+                                </div>
+                                <div class="row g-3 align-items-center mb-4">
+                                    <div class="col-2">
+                                        <label for="inputAccountNumber" className="col-form-label">Branch:</label>
+                                    </div>
+                                    <div class="col-4">
+                                        <input type="text" id="inputAccountNumber" className="form-control" value='patan'></input>
                                     </div>
                                 </div>
                                 <div class="row g-3 align-items-center mb-4">

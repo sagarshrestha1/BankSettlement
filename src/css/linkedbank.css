@@ -1,3 +1,71 @@
+
 td a{
     size: 20px;
 }
+td{
+    white-space: nowrap;
+}
+
+
+
+.nav-tabs .nav-item .nav-link {
+    border: none !important;
+    border-radius: 4px !important;
+    color: #0A3A84 !important;
+    font-weight: 500;
+    background-color: transparent !important;
+    box-shadow: none !important; 
+    outline: none !important;
+  }
+  
+  .nav-tabs .nav-item .nav-link.active {
+    background-color: #BAC8DC !important;
+    border: none !important;
+    box-shadow: none !important;  
+    color: #0A3A84 !important;
+    font-weight: 500;
+    outline: none !important;
+  }
+  
+  .nav-tabs {
+    border-bottom: none !important;
+  }
+  
+  .tab-content {
+    background-color: #fcfdfe;
+    padding-top: 0;
+    border-radius: 0;
+    border-top: none;
+  }
+  
+  .nav-teams{
+    border:none;
+  }
+  
+  table tbody tr td{
+    background-color: #BAC8DC;
+  }
+  .status-label {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: white;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.approved {
+  background-color: #00ff7f; 
+}
+
+.pending {
+  background-color: #ffcc00; 
+  color: white;
+}
+
+.rejected {
+  background-color: #d62828; 
+}
+  

@@ -6,6 +6,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons/faTrash";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons/faTrashAlt";
 import { Navigate } from "react-router-dom";
 
+
 function UserManagement() {
     const styleColor = '#0A3A84';
     
