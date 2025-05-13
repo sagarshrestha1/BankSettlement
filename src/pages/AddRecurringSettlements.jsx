@@ -1,7 +1,7 @@
 import Breadcrumbs from "../components/BreadCrum";
 
 
-function AddSettlement() {
+function AddRecurringSettlements() {
     return (
         <>
 
@@ -42,14 +42,7 @@ function AddSettlement() {
                                     <input type="text" id="inputAccountName" className="form-control" placeholder="Rastriya Banijya Bank" disabled style={{ color: '#0A3A84' }}></input>
                                 </div>
                             </div>
-                            <div class="row g-3 align-items-center mb-4">
-                                <div class="col-2">
-                                    <label for="inputSettlementTime" className="col-form-label">Settlement Time:</label>
-                                </div>
-                                <div class="col-4 cs-form">
-                                    <input type="time" id="inputSettlementTime" className="form-control"></input>
-                                </div>
-                            </div>
+                           
                             <div class="row g-3 align-items-center mb-4">
                                 <div class="col-2">
                                     <label for="inputStatus" className="col-form-label">Status:</label>
@@ -81,4 +74,4 @@ function AddSettlement() {
         </>
     );
 }
-export default AddSettlement;
+export default AddRecurringSettlements;

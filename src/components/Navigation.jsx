@@ -22,60 +22,6 @@ function Navigation() {
                         <span className="d-none d-sm-inline">Dashboard</span>
                     </a>
                 </li>
-                <li className='nav-item m-1' style={{
-                    border: '1px solid #C1CAD7',
-                    borderRadius: '9px',
-                    padding: '4px',
-                    color: '#0A3A84'
-                }} onClick={() => handleItemClick(0)}>
-                    <a className="d-flex justify-content-between align-items-center navlink nav-link px-2" data-bs-toggle="collapse" href="#submenu1" role="button" aria-expanded="false" aria-controls='submenu1' >
-                        <span className="d-none d-sm-inline">Settlement Management </span><FontAwesomeIcon icon={faChevronDown} style={{ color: '#0A3A84 ' }}></FontAwesomeIcon>
-                    </a>
-                    <div className="collapse ps-3" id="submenu1">
-                        <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
-                            <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
-                                borderRadius: '9px',
-                                padding: '4px'
-                            }}>
-                                <a href="/settlements" className="nav-link"><span className="d-none d-sm-inline">Settlement </span></a></li>
-                            <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
-                                borderRadius: '9px',
-                                padding: '4px'
-                            }}><a href="/settlements/addsettlement" className="nav-link"><span className="d-none d-sm-inline">Add Settlement </span></a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li className='nav-item m-1' style={{
-                    border: '1px solid #C1CAD7',
-                    borderRadius: '9px',
-                    padding: '4px'
-                }} onClick={() => handleItemClick(0)}>
-                    <a className="navlink nav-link px-2">
-
-                        <span className="d-none d-sm-inline">Transaction Report</span>
-                    </a>
-                </li>
-                <li className='nav-item m-1' style={{
-                    border: '1px solid #C1CAD7',
-                    borderRadius: '9px',
-                    padding: '4px'
-                }} onClick={() => handleItemClick(0)}>
-                    <a href="#" className="navlink nav-link px-2">
-                        <span className="d-none d-sm-inline">Activity Log</span>
-                    </a>
-                </li>
-                <li className='nav-item m-1' style={{
-                    border: '1px solid #C1CAD7',
-                    borderRadius: '9px',
-                    padding: '4px'
-                }} onClick={() => handleItemClick(0)}>
-                    <a className="navlink nav-link px-2 d-flex justify-content-between align-items-center"  href="/linkbank" >
-                        <span className="d-none d-sm-inline">Bank Account  </span>
-                    </a>
-                    
-                </li>
                 <li className="nav-item m-1" style={{
                     border: '1px solid #C1CAD7',
                     borderRadius: '9px',
@@ -139,6 +85,86 @@ function Navigation() {
                         </ul>
                     </div>
                 </li>
+                  <li className='nav-item m-1' style={{
+                    border: '1px solid #C1CAD7',
+                    borderRadius: '9px',
+                    padding: '4px'
+                }} onClick={() => handleItemClick(0)}>
+                    <a className="navlink nav-link px-2 d-flex justify-content-between align-items-center"  href="/linkbank" >
+                        <span className="d-none d-sm-inline">Bank Account  </span>
+                    </a>
+                    
+                </li>
+                <li className='nav-item m-1' style={{
+                    border: '1px solid #C1CAD7',
+                    borderRadius: '9px',
+                    padding: '4px',
+                    color: '#0A3A84'
+                }} onClick={() => handleItemClick(0)}>
+                    <a className="d-flex justify-content-between align-items-center navlink nav-link px-2" data-bs-toggle="collapse" href="#submenu1" role="button" aria-expanded="false" aria-controls='submenu1' >
+                        <span className="d-none d-sm-inline">Settlements </span><FontAwesomeIcon icon={faChevronDown} style={{ color: '#0A3A84 ' }}></FontAwesomeIcon>
+                    </a>
+                    <div className="collapse ps-3" id="submenu1">
+                        <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
+                            <li className="nav-item m-1" style={{
+                                border: '3px solid #C1CAD7',
+                                borderRadius: '9px',
+                                padding: '4px'
+                            }}>
+                                <a href="/recurringsettlements" className="nav-link"><span className="d-none d-sm-inline">Recurring Settlement </span></a></li>
+                            <li className="nav-item m-1" style={{
+                                border: '3px solid #C1CAD7',
+                                borderRadius: '9px',
+                                padding: '4px'
+                            }}><a href="/settlements/addsettlement" className="nav-link"><span className="d-none d-sm-inline">Manual Settlement </span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li className='nav-item m-1' style={{
+                    border: '1px solid #C1CAD7',
+                    borderRadius: '9px',
+                    padding: '4px'
+                }} onClick={() => handleItemClick(0)}>
+                    <a className="navlink nav-link px-2">
+
+                        <span className="d-none d-sm-inline">Transaction Report</span>
+                    </a>
+                </li>
+                <li className='nav-item m-1' style={{
+                    border: '1px solid #C1CAD7',
+                    borderRadius: '9px',
+                    padding: '4px'
+                }} onClick={() => handleItemClick(0)}>
+                    <a href="#" className="navlink nav-link px-2">
+                        <span className="d-none d-sm-inline">Activity Log</span>
+                    </a>
+                </li>
+              <li className='nav-item m-1' style={{
+                    border: '1px solid #C1CAD7',
+                    borderRadius: '9px',
+                    padding: '4px',
+                    color: '#0A3A84'
+                }} onClick={() => handleItemClick(0)}>
+                    <a className="d-flex justify-content-between align-items-center navlink nav-link px-2" data-bs-toggle="collapse" href="#submenu3" role="button" aria-expanded="false" aria-controls='submenu3' >
+                        <span className="d-none d-sm-inline">Approvals </span><FontAwesomeIcon icon={faChevronDown} style={{ color: '#0A3A84 ' }}></FontAwesomeIcon>
+                    </a>
+                    <div className="collapse ps-3" id="submenu3">
+                        <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
+                            <li className="nav-item m-1" style={{
+                                border: '3px solid #C1CAD7',
+                                borderRadius: '9px',
+                                padding: '4px'
+                            }}>
+                                <a href="/settlements" className="nav-link"><span className="d-none d-sm-inline">Bank Account</span></a></li>
+                            <li className="nav-item m-1" style={{
+                                border: '3px solid #C1CAD7',
+                                borderRadius: '9px',
+                                padding: '4px'
+                            }}><a href="/settlements/addsettlement" className="nav-link"><span className="d-none d-sm-inline">Settlement </span></a></li>
+                        </ul>
+                    </div>
+                </li>
+                
 
             </ul>
         </div>

@@ -19,7 +19,7 @@ td{
   }
   
   .nav-tabs .nav-item .nav-link.active {
-    background-color: #BAC8DC !important;
+    background-color: #F3F5F9 !important;
     border: none !important;
     box-shadow: none !important;  
     color: #0A3A84 !important;
@@ -32,7 +32,7 @@ td{
   }
   
   .tab-content {
-    background-color: #fcfdfe;
+    background-color:#F3F5F9;
     padding-top: 0;
     border-radius: 0;
     border-top: none;
@@ -43,7 +43,7 @@ td{
   }
   
   table tbody tr td{
-    background-color: #BAC8DC;
+    background-color: #F3F5F9;
   }
   .status-label {
   display: inline-block;

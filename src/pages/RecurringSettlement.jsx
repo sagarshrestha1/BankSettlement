@@ -3,7 +3,7 @@ import { faCircle, faEdit } from '@fortawesome/free-solid-svg-icons';
 import Breadcrumbs from '../components/BreadCrum';
 import SearchInput from '../components/SearchInput';
 
-function LinkedBankAccount() {
+function RecurringSettlements() {
     const styleColor = '#0A3A84';
     return (
         <>
@@ -14,7 +14,7 @@ function LinkedBankAccount() {
                     <div>
                         <div className="float-end">
                             <SearchInput />
-                            <a href="/linkbank/add" className='btn btn-danger px-5 ml-2'>Add Bank</a>
+                            <a href="/recurringsettlements/addrecurringsettlement" className='btn btn-danger px-5 ml-2'>Add Settlement</a>
                         </div>
                         <h3 style={{
                             color: '#0A3A84'
@@ -62,64 +62,56 @@ function LinkedBankAccount() {
                                 <table className="table table-scripted table-responsive-md" style={{ textAlign: 'center', backgroundColor: '#F3F5F9 ' }}>
                                     <thead className="thead-info" >
                                         <tr>
-                                            <th>S. No</th>
-                                            <th>Name</th>
-                                            <th>Account Number</th>
-                                            <th>Acc.Type</th>
+                                            <th>Created Date</th>
+                                            <th>Dr. Bank</th>
+                                            <th>Cr. Bank</th>
+                                            <th>Settlement Time</th>
                                             <th>Status</th>
                                             <th>Action</th>
-                                            <th>EOD Bal.</th>
                                             <th>Current Bal.</th>
                                         </tr>
                                     </thead>
                                     <tbody >
                                         <tr>
-                                            <td>1</td>
+                                            <td>4/30/2025</td>
                                             <td>Nic Asia Bank</td>
-                                            <td>13123123213123</td>
-                                            <td>Debit</td>
-                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                            <td>RBB</td>
+                                            <td>16:05:55</td>
+                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'lightgreen' }}></FontAwesomeIcon></td>
                                             <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
                                                 fontSize: '25px'
                                             }} ></FontAwesomeIcon></a></td>
                                             <td>4564564</td>
-                                            <td>4564564</td>
+                                           
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td>Rastriya Banijya Bank</td>
-                                            <td>13123123213123</td>
-                                            <td>Credit</td>
-                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
-
-                                            <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
-                                                fontSize: '25px'
-                                            }}></FontAwesomeIcon></a></td>
-                                            <td>4564564</td>
-                                            <td>4564564</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
+                                            <td>4/30/2025</td>
                                             <td>Nabil Bank</td>
-                                            <td>13123123213123</td>
-                                            <td>Debit</td>
-                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
-
+                                            <td>RBB</td>
+                                            <td>16:05:55</td>
+                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'lightgreen' }}></FontAwesomeIcon></td>
                                             <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
                                                 fontSize: '25px'
                                             }} ></FontAwesomeIcon></a></td>
                                             <td>4564564</td>
-                                            <td>4564564</td>
+                                           
                                         </tr>
+                                        <tr>
+                                            <td>4/30/2025</td>
+                                            <td>Siddhartha Bank</td>
+                                            <td>RBB</td>
+                                            <td>16:05:55</td>
+                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'lightgreen' }}></FontAwesomeIcon></td>
+                                            <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
+                                                fontSize: '25px'
+                                            }} ></FontAwesomeIcon></a></td>
+                                            <td>4564564</td>
+                                           
+                                        </tr>
+                                        
                                     </tbody>
                                 </table>
 
-                                <div className="row p-2" style={{
-                                    color: '#0A3A84'
-                                }}>
-                                    <h4>Total Balance: 12,31,23,123</h4>
-
-                                </div>
                             </div>
                             <div class="tab-pane fade pb-5 pt-3" id="pending" role="tabpanel" aria-labelledby="pending-tab">
 
@@ -128,13 +120,14 @@ function LinkedBankAccount() {
                                     <table className="table table-scripted m-0" style={{ tableLayout: 'fixed', textAlign: 'center' }}>
                                         <thead className="thead-info" >
                                             <tr>
-                                                <th>S. No.</th>
-                                                <th>Name</th>
-                                                <th>Account Number</th>
-                                                <th>Account Type</th>
+                                                <th>Created Date</th>
+                                                <th>Dr. Bank</th>
+                                                <th>Type</th>
+                                                <th>Settlement Time</th>
                                                 <th>Status</th>
-                                                <th>Approval</th>
                                                 <th>Action</th>
+                                                <th>Approval</th>
+                                                <th>Current Dr. Bal.</th>
                                             </tr>
                                         </thead>
                                     </table>
@@ -146,50 +139,76 @@ function LinkedBankAccount() {
                                     <table className="table table-scripted m-0" style={{ tableLayout: 'fixed', textAlign: 'center' }}>
                                         <tbody className="transacationDetail">
                                             <tr>
-                                                <td>1</td>
-                                                <td>Nic Asia Bank</td>
-                                                <td>13123123213123</td>
-                                                <td>Debit</td>
+                                                <td>4/30/2025</td>
+                                                <td>ADBL</td>
+                                                <td>Recurring</td>
+                                                <td>-</td>
                                                 <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
                                                 <td><span class="status-label approved">Approved</span></td>
                                                 <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td>456543</td>
                                             </tr>
                                             <tr>
-                                                <td>2</td>
-                                                <td>Nic Asia Bank</td>
-                                                <td>13123123213123</td>
-                                                <td>Debit</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'green' }}></FontAwesomeIcon></td>
-                                                <td><span class="status-label approved">Approved</span></td>
-                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Nic Asia Bank</td>
-                                                <td>13123123213123</td>
-                                                <td>Debit</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'green' }}></FontAwesomeIcon></td>
-                                                <td><span class="status-label approved">Approved</span></td>
-                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Nic Asia Bank</td>
-                                                <td>13123123213123</td>
-                                                <td>Debit</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td>4/30/2025</td>
+                                                <td>Laxmi Bank</td>
+                                                <td>Recurring</td>
+                                                <td>16:05:55</td>
+                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'lightgreen' }}></FontAwesomeIcon></td>
                                                 <td><span class="status-label pending">Pending</span></td>
                                                 <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td>456543</td>
                                             </tr>
                                             <tr>
-                                                <td>5</td>
-                                                <td>Nic Asia Bank</td>
-                                                <td>13123123213123</td>
-                                                <td>Debit</td>
+                                                <td>4/30/2025</td>
+                                                <td>ADBL</td>
+                                                <td>Recurring</td>
+                                                <td>-</td>
                                                 <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
-                                                <td><span class="status-label pending">Pending</span></td>
+                                                <td><span class="status-label approved">Approved</span></td>
                                                 <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td>456543</td>
                                             </tr>
+                                            <tr>
+                                                <td>4/30/2025</td>
+                                                <td>ADBL</td>
+                                                <td>Recurring</td>
+                                                <td>-</td>
+                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td><span class="status-label approved">Approved</span></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td>456543</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4/30/2025</td>
+                                                <td>ADBL</td>
+                                                <td>Recurring</td>
+                                                <td>-</td>
+                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td><span class="status-label approved">Approved</span></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td>456543</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4/30/2025</td>
+                                                <td>ADBL</td>
+                                                <td>Recurring</td>
+                                                <td>-</td>
+                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td><span class="status-label approved">Approved</span></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td>456543</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4/30/2025</td>
+                                                <td>ADBL</td>
+                                                <td>Recurring</td>
+                                                <td>-</td>
+                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td><span class="status-label approved">Approved</span></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td>456543</td>
+                                            </tr>
+                                           
 
                                         </tbody>
                                     </table>
@@ -206,4 +225,4 @@ function LinkedBankAccount() {
         </>
     )
 }
-export default LinkedBankAccount;
+export default RecurringSettlements;

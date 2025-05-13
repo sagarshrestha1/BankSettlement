@@ -18,9 +18,9 @@ import EditBank from './pages/EditBank';
 import './css/addbank.css';
 import Navigation from './components/Navigation';
 import Layout from './components/Layout';
-import Settlement from './pages/Settlement';
-import AddSettlements from './pages/AddSettlements';
-import EditSettlements from './pages/EditSettlements';
+import Settlement from './pages/RecurringSettlement';
+import AddRecurringSettlements from './pages/AddRecurringSettlements';
+import EditRecurringSettlements from './pages/EditSettlements';
 import { AuthContext } from './context/AuthContext';
 import { useEffect, useState } from 'react';
 import RoleManagement from './pages/RoleManagement';
@@ -30,6 +30,7 @@ import EditRole from './pages/EditRole';
 import UserManagement from './pages/UserManagement';
 import AddUsers from './pages/AddUsers';
 import EditUser from './pages/EditUser';
+import RecurringSettlements from './pages/RecurringSettlement';
 
 function App() {
   const [isLogin, setIsLogin] = useState(() => {
@@ -49,18 +50,15 @@ function App() {
           <Route path="/linkbank" element={<LinkedBankAccount />} />
           <Route path="/linkbank/add" element={<AddBank />} />
           <Route path="/linkbank/edit" element={<EditBank />} />
-          <Route path="/settlements" element={<Settlement />} />
-          <Route path="/settlements/addsettlement" element={<AddSettlements />} />
-          <Route path="/settlements/editsettlement" element={<EditSettlements />} />
+          <Route path="/recurringsettlements" element={<RecurringSettlements />} />
+          <Route path="/recurringsettlements/addrecurringsettlement" element={<AddRecurringSettlements />} />
+          <Route path="/recurringsettlements/editrecurringsettlement" element={<EditRecurringSettlements />} />
           <Route path="/rolemanagement" element={<RoleManagement />}/>
           <Route path="/rolemanagement/addrole" element={<AddRole/>}/>
           <Route path="/rolemanagement/editrole" element={<EditRole/>}/>
           <Route path="/usermanagement" element={<UserManagement/>}/>
           <Route path="/usermanagement/addUser" element={<AddUsers/>}/>
           <Route path="/usermanagement/editUser" element={<EditUser/>}/>
-          
-
-
         </Route>
       </Routes>
     </AuthContext.Provider>

@@ -1,5 +1,5 @@
+import BackButton from "../components/BackButton";
 import Breadcrumbs from "../components/BreadCrum";
-
 
 function AddRole() {
     const permissions = [
@@ -35,7 +35,7 @@ function AddRole() {
 
                 <div className="row d-flex justify-content-between p-2">
                     <div>
-                        <button className='btn btn-danger float-end px-5'>Back</button>
+                        <BackButton/>
                         <h3 style={{
                             color: '#0A3A84'
                         }}><Breadcrumbs /></h3>

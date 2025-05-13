@@ -8,6 +8,39 @@ function Dashboard() {
 
             <div className=" container d-block justify-content-start align-items-start mt-3 w-100 ml-3">
                 <div className="row p-2">
+                   <div className="col-4">
+                    <div className="card" style={{width:'23rem',backgroundColor:'#F3F5F9'}}>
+                        <div className="card-body d-flex justify-content-center align-items-center py-5">
+                            <div style={{color:'#0A3A84'}}>
+                            <h3 className="card-title" style={{paddingLeft:'40px'}}>4</h3>
+                            <h5 className="card-subtitle">Linked Bank</h5>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div className="col-4">
+                    <div className="card" style={{width:'23rem',backgroundColor:'#F3F5F9'}}>
+                        <div className="card-body d-flex justify-content-center align-items-center py-5">
+                            <div style={{color:'#0A3A84'}} className="d-block ">
+                            <h3 className="card-title" style={{paddingRight:'40px'}}>1234543211</h3>
+                            <h5 className="card-subtitle">Total Balance</h5>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div className="col-4">
+                    <div className="card" style={{width:'23rem',backgroundColor:'#F3F5F9'}}>
+                        <div className="card-body d-flex justify-content-center align-items-center py-5">
+                            <div style={{color:'#0A3A84'}}>
+                            <h3 className="card-title" style={{paddingLeft:'40px'}}>8</h3>
+                            <h5 className="card-subtitle">Settlement</h5>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   
+                </div>
+                <div className="row p-2">
                     <div className="linkbank col-9 col-md p-3 ml-3" style={{
                         backgroundColor: '#F3F5F9'
                     }}>

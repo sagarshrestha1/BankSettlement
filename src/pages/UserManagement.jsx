@@ -5,10 +5,14 @@ import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons/faTrash";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons/faTrashAlt";
 import { Navigate } from "react-router-dom";
-
+import { DataTable } from 'primereact/datatable';
+import { Column } from "primereact/column";
+import SearchInput from "../components/SearchInput";
 
 function UserManagement() {
     const styleColor = '#0A3A84';
+    
+   
     
    
     return(
@@ -17,7 +21,7 @@ function UserManagement() {
         <div className="row d-flex justify-content-between p-2">
             <div>
                 <div className="float-end">
-                <input type="search" ></input>
+                <SearchInput />
                 <a className='btn btn-danger float-end px-5' href="/usermanagement/addUser">Add User</a>
                 </div>
                 <h3 style={{
