@@ -20,7 +20,7 @@ import Navigation from './components/Navigation';
 import Layout from './components/Layout';
 import Settlement from './pages/RecurringSettlement';
 import AddRecurringSettlements from './pages/AddRecurringSettlements';
-import EditRecurringSettlements from './pages/EditSettlements';
+import EditRecurringSettlements from './pages/EditRecurringSettlements';
 import { AuthContext } from './context/AuthContext';
 import { useEffect, useState } from 'react';
 import RoleManagement from './pages/RoleManagement';
@@ -31,6 +31,10 @@ import UserManagement from './pages/UserManagement';
 import AddUsers from './pages/AddUsers';
 import EditUser from './pages/EditUser';
 import RecurringSettlements from './pages/RecurringSettlement';
+import ManualSettlement from './pages/ManualSettlement';
+import AddManualSettlement from './pages/AddManualSettlement';
+import EditManualSettlement from './pages/EditManualSettlement';
+
 
 function App() {
   const [isLogin, setIsLogin] = useState(() => {
@@ -50,9 +54,12 @@ function App() {
           <Route path="/linkbank" element={<LinkedBankAccount />} />
           <Route path="/linkbank/add" element={<AddBank />} />
           <Route path="/linkbank/edit" element={<EditBank />} />
-          <Route path="/recurringsettlements" element={<RecurringSettlements />} />
-          <Route path="/recurringsettlements/addrecurringsettlement" element={<AddRecurringSettlements />} />
-          <Route path="/recurringsettlements/editrecurringsettlement" element={<EditRecurringSettlements />} />
+          <Route path="/recurringsettlement" element={<RecurringSettlements />} />
+          <Route path="/recurringsettlement/addrecurringsettlement" element={<AddRecurringSettlements />} />
+          <Route path="/recurringsettlement/editrecurringsettlement" element={<EditRecurringSettlements />} />
+          <Route path="/manualsettlement" element={<ManualSettlement />} />
+          <Route path="/manualsettlement/addmanualsettlement" element={<AddManualSettlement />} />
+          <Route path="/manualsettlement/editmanualsettlement" element={<EditManualSettlement />} />
           <Route path="/rolemanagement" element={<RoleManagement />}/>
           <Route path="/rolemanagement/addrole" element={<AddRole/>}/>
           <Route path="/rolemanagement/editrole" element={<EditRole/>}/>

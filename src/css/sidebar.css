@@ -1,19 +1,13 @@
-.nav-item {
-    color:#0A3A84;
-    border:1px solid;
-    border-radius: 9px;
-    
+.sidebar .has-children:hover {
+  background-color: transparent; 
 }
-.nav{
-    list-style-position: inside;
-    
+
+
+
+.sidebar .collapse .nav-item:hover {
+  background-color: #CED8E6;
+  border-radius: 9px;
 }
-ul li:hover{
-    cursor: pointer;
+.sidebar:not(.has-children) li:hover{
     background-color: #BAC8DC;
-}
-ul li ul li:hover{
-    cursor: pointer;
-    background-color: #e6f0ff;
-    border-radius: 9px;
 }

@@ -4,15 +4,18 @@ const breadcrumbNameMap = {
     'linkbank': 'Linked Bank',
     'add': 'Add Bank',
     'edit': 'Edit Bank',
-    'recurringsettlements':'Recurring Settlements',
+    'recurringsettlement':'Recurring Settlements',
     'addrecurringsettlement': 'Add Recurring Settlement',
-    'editsettlement': 'Edit Settlement',
+    'editrecurringsettlement': 'Edit Recurring Settlement',
     'editRole':'Edit Role',
     'addRole':'Add Role',
     'editUser':'Edit User',
     'addUser':'Add User',
     'rolemanagement':'Role Management',
-    'usermanagement':'User Management'
+    'usermanagement':'User Management',
+    'manualsettlement':'Manual Settlement',
+    'addmanualsettlement':'Add Manual Settlement',
+    'editmanualsettlement':'Edit Manual Settlement',
 };
 
 const Breadcrumbs = () => {

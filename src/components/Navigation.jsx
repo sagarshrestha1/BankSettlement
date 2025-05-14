@@ -22,7 +22,7 @@ function Navigation() {
                         <span className="d-none d-sm-inline">Dashboard</span>
                     </a>
                 </li>
-                <li className="nav-item m-1" style={{
+                <li className="nav-item m-1 has-children" style={{
                     border: '1px solid #C1CAD7',
                     borderRadius: '9px',
                     padding: '4px'
@@ -45,7 +45,7 @@ function Navigation() {
 
 
                             <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
+                                border: '1px solid #C1CAD7',
                                 borderRadius: '9px',
                                 padding: '4px'
                             }}>
@@ -65,7 +65,7 @@ function Navigation() {
 
 
                             <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
+                                border: '1px solid #C1CAD7',
                                 borderRadius: '9px',
                                 padding: '4px'
                             }}>
@@ -95,7 +95,7 @@ function Navigation() {
                     </a>
                     
                 </li>
-                <li className='nav-item m-1' style={{
+                <li className='nav-item m-1 has-children' style={{
                     border: '1px solid #C1CAD7',
                     borderRadius: '9px',
                     padding: '4px',
@@ -107,16 +107,16 @@ function Navigation() {
                     <div className="collapse ps-3" id="submenu1">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
                             <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
+                                border: '1px solid #C1CAD7',
                                 borderRadius: '9px',
                                 padding: '4px'
                             }}>
                                 <a href="/recurringsettlements" className="nav-link"><span className="d-none d-sm-inline">Recurring Settlement </span></a></li>
                             <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
+                                border: '1px solid #C1CAD7',
                                 borderRadius: '9px',
                                 padding: '4px'
-                            }}><a href="/settlements/addsettlement" className="nav-link"><span className="d-none d-sm-inline">Manual Settlement </span></a></li>
+                            }}><a href="/manualsettlement" className="nav-link"><span className="d-none d-sm-inline">Manual Settlement </span></a></li>
                         </ul>
                     </div>
                 </li>
@@ -139,7 +139,7 @@ function Navigation() {
                         <span className="d-none d-sm-inline">Activity Log</span>
                     </a>
                 </li>
-              <li className='nav-item m-1' style={{
+              <li className='nav-item m-1 has-children' style={{
                     border: '1px solid #C1CAD7',
                     borderRadius: '9px',
                     padding: '4px',
@@ -151,13 +151,13 @@ function Navigation() {
                     <div className="collapse ps-3" id="submenu3">
                         <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small" >
                             <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
+                                border: '1px solid #C1CAD7',
                                 borderRadius: '9px',
                                 padding: '4px'
                             }}>
                                 <a href="/settlements" className="nav-link"><span className="d-none d-sm-inline">Bank Account</span></a></li>
                             <li className="nav-item m-1" style={{
-                                border: '3px solid #C1CAD7',
+                                border: '1px solid #C1CAD7',
                                 borderRadius: '9px',
                                 padding: '4px'
                             }}><a href="/settlements/addsettlement" className="nav-link"><span className="d-none d-sm-inline">Settlement </span></a></li>

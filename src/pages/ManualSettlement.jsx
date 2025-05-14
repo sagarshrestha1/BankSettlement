@@ -3,7 +3,7 @@ import { faCircle, faEdit } from '@fortawesome/free-solid-svg-icons';
 import Breadcrumbs from '../components/BreadCrum';
 import SearchInput from '../components/SearchInput';
 
-function RecurringSettlements() {
+function ManualSettlement() {
     const styleColor = '#0A3A84';
     return (
         <>
@@ -14,7 +14,7 @@ function RecurringSettlements() {
                     <div>
                         <div className="float-end">
                             <SearchInput />
-                            <a href="/recurringsettlement/addrecurringsettlement" className='btn btn-danger px-5 ml-2'>Add Recurring Settlement</a>
+                            <a href="/manualsettlement/addmanualsettlement" className='btn btn-danger px-5 ml-2'>Add Manual Settlement</a>
                         </div>
                         <h3 style={{
                             color: '#0A3A84'
@@ -62,13 +62,11 @@ function RecurringSettlements() {
                                 <table className="table table-scripted table-responsive-md" style={{ textAlign: 'center', backgroundColor: '#F3F5F9 ' }}>
                                     <thead className="thead-info" >
                                         <tr>
-                                            <th>Created Date</th>
+                                            <th>Date</th>
                                             <th>Dr. Bank</th>
                                             <th>Cr. Bank</th>
-                                            <th>Settlement Time</th>
-                                            <th>Status</th>
                                             <th>Action</th>
-                                            <th>Current Bal.</th>
+                                            <th>Amount</th>
                                         </tr>
                                     </thead>
                                     <tbody >
@@ -76,39 +74,34 @@ function RecurringSettlements() {
                                             <td>4/30/2025</td>
                                             <td>Nic Asia Bank</td>
                                             <td>RBB</td>
-                                            <td>16:05:55</td>
-                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'lightgreen' }}></FontAwesomeIcon></td>
-                                            <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
+                                            <td><a href="manualsettlement/editmanualsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
                                                 fontSize: '25px'
                                             }} ></FontAwesomeIcon></a></td>
-                                            <td>4564564</td>
-                                           
+                                            <td>45345564</td>
+
                                         </tr>
                                         <tr>
                                             <td>4/30/2025</td>
-                                            <td>Nabil Bank</td>
+                                            <td>Nic Asia Bank</td>
                                             <td>RBB</td>
-                                            <td>16:05:55</td>
-                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'lightgreen' }}></FontAwesomeIcon></td>
-                                            <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
+                                            <td><a href="manualsettlement/editmanualsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
                                                 fontSize: '25px'
                                             }} ></FontAwesomeIcon></a></td>
-                                            <td>4564564</td>
-                                           
+                                            <td>4564764</td>
+
                                         </tr>
                                         <tr>
                                             <td>4/30/2025</td>
-                                            <td>Siddhartha Bank</td>
+                                            <td>Nic Asia Bank</td>
                                             <td>RBB</td>
-                                            <td>16:05:55</td>
-                                            <td><FontAwesomeIcon icon={faCircle} style={{ color: 'lightgreen' }}></FontAwesomeIcon></td>
-                                            <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
+                                            <td><a href="manualsettlement/editmanualsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{
                                                 fontSize: '25px'
                                             }} ></FontAwesomeIcon></a></td>
                                             <td>4564564</td>
-                                           
+
                                         </tr>
-                                        
+
+
                                     </tbody>
                                 </table>
 
@@ -120,14 +113,12 @@ function RecurringSettlements() {
                                     <table className="table table-scripted m-0" style={{ tableLayout: 'fixed', textAlign: 'center' }}>
                                         <thead className="thead-info" >
                                             <tr>
-                                                <th>Created Date</th>
+                                                <th>Date</th>
                                                 <th>Dr. Bank</th>
-                                                <th>Type</th>
-                                                <th>Settlement Time</th>
-                                                <th>Status</th>
-                                                <th>Action</th>
+                                                <th>Cr. Bank</th>
                                                 <th>Approval</th>
-                                                <th>Current Dr. Bal.</th>
+                                                <th>Action</th>
+                                                <th>Amount</th>
                                             </tr>
                                         </thead>
                                     </table>
@@ -141,75 +132,59 @@ function RecurringSettlements() {
                                             <tr>
                                                 <td>4/30/2025</td>
                                                 <td>ADBL</td>
-                                                <td>Recurring</td>
-                                                <td>-</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td>Nabil Bank</td>
                                                 <td><span class="status-label approved">Approved</span></td>
-                                                <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
-                                                <td>456543</td>
-                                            </tr>
-                                            <tr>
-                                                <td>4/30/2025</td>
-                                                <td>Laxmi Bank</td>
-                                                <td>Recurring</td>
-                                                <td>16:05:55</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'lightgreen' }}></FontAwesomeIcon></td>
-                                                <td><span class="status-label pending">Pending</span></td>
-                                                <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
                                                 <td>456543</td>
                                             </tr>
                                             <tr>
                                                 <td>4/30/2025</td>
                                                 <td>ADBL</td>
-                                                <td>Recurring</td>
-                                                <td>-</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td>Nabil Bank</td>
                                                 <td><span class="status-label approved">Approved</span></td>
-                                                <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
                                                 <td>456543</td>
                                             </tr>
                                             <tr>
                                                 <td>4/30/2025</td>
                                                 <td>ADBL</td>
-                                                <td>Recurring</td>
-                                                <td>-</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td>Nabil Bank</td>
                                                 <td><span class="status-label approved">Approved</span></td>
-                                                <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
                                                 <td>456543</td>
                                             </tr>
                                             <tr>
                                                 <td>4/30/2025</td>
                                                 <td>ADBL</td>
-                                                <td>Recurring</td>
-                                                <td>-</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td>Nabil Bank</td>
                                                 <td><span class="status-label approved">Approved</span></td>
-                                                <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
                                                 <td>456543</td>
                                             </tr>
                                             <tr>
                                                 <td>4/30/2025</td>
                                                 <td>ADBL</td>
-                                                <td>Recurring</td>
-                                                <td>-</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td>Nabil Bank</td>
                                                 <td><span class="status-label approved">Approved</span></td>
-                                                <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
                                                 <td>456543</td>
                                             </tr>
                                             <tr>
                                                 <td>4/30/2025</td>
                                                 <td>ADBL</td>
-                                                <td>Recurring</td>
-                                                <td>-</td>
-                                                <td><FontAwesomeIcon icon={faCircle} style={{ color: 'red' }}></FontAwesomeIcon></td>
+                                                <td>Nabil Bank</td>
                                                 <td><span class="status-label approved">Approved</span></td>
-                                                <td><a href="recurringsettlement/editrecurringsettlement" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
                                                 <td>456543</td>
                                             </tr>
-                                           
-
+                                            <tr>
+                                                <td>4/30/2025</td>
+                                                <td>ADBL</td>
+                                                <td>Nabil Bank</td>
+                                                <td><span class="status-label approved">Approved</span></td>
+                                                <td><a href="linkbank/edit" style={{ color: styleColor }}><FontAwesomeIcon icon={faEdit} style={{ fontSize: '25px' }}></FontAwesomeIcon></a></td>
+                                                <td>456543</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -218,11 +193,7 @@ function RecurringSettlements() {
                     </div>
                 </div>
             </div>
-
-
-
-
         </>
     )
 }
-export default RecurringSettlements;
+export default ManualSettlement;

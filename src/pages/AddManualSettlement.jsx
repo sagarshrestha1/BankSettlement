@@ -2,7 +2,7 @@ import Breadcrumbs from "../components/BreadCrum";
 import BackButton from "../components/BackButton";
 
 
-function AddRecurringSettlements() {
+function AddManualSettlements() {
     return (
         <>
 
@@ -20,7 +20,7 @@ function AddRecurringSettlements() {
                     <div className="col-9 col-md p-3 ml-3" style={{
                         backgroundColor: '#F3F5F9'
                     }}>
-                        <h3 style={{ color: '#0A3A84' }}>Add Recurring Settlement</h3>
+                        <h3 style={{ color: '#0A3A84' }}>Add Manual Settlement</h3>
                         <form>
                             <div class="row g-1 align-items-center mb-4">
                                 <div class="col-2">
@@ -40,23 +40,29 @@ function AddRecurringSettlements() {
                                     <label for="inputAccountName" className="col-form-label">Credit Bank Account:</label>
                                 </div>
                                 <div class="col-4">
-                                    <input type="text" id="inputAccountName" className="form-control" placeholder="Rastriya Banijya Bank" disabled style={{ color: '#0A3A84' }}></input>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected className="text-muted">Select Credit Bank Account</option>
+                                        <option value="NabilBank">Nabil Bank</option>
+                                        <option value="NicAsiaBank">Nic Asia Bank</option>
+                                        <option value="SiddharthaBank">Siddhartha Bank</option>
+                                    </select>
                                 </div>
                             </div>
                            
                             <div class="row g-3 align-items-center mb-4">
                                 <div class="col-2">
-                                    <label for="inputStatus" className="col-form-label">Status:</label>
+                                    <label for="inputAmount" className="col-form-label">Amount:</label>
                                 </div>
-                                <div className="col-2 d-flex justify-content-start">
-                                    <div className="form-check pr-5">
-                                        <input type="radio" id="inputStatusInactive" className="form-check-input" checked disabled ></input>
-                                        <label for="inputStatus">Inactive</label>
-                                    </div>
-                                    <div className="form-check pl-5" style={{ paddingLeft: '30px' }}>
-                                        <input type="radio" id="inputStatusActive" className="form-check-input" disabled ></input>
-                                        <label for="inputStatus">Active</label>
-                                    </div>
+                                <div className="col-4 d-flex justify-content-start">
+                                    <input type="text" className="form-control" placeholder="Enter Amount" />
+                                </div>
+                            </div>
+                            <div class="row g-3 align-items-center mb-4">
+                                <div class="col-2">
+                                    <label for="inputRemarks" className="col-form-label">Remarks:</label>
+                                </div>
+                                <div className="col-4 d-flex justify-content-start">
+                                    <textarea type="text" className="form-control pb-5" placeholder="Type Remarks..." row='6' />
                                 </div>
                             </div>
                             <button type="submit" className="btn px-5" style={{ backgroundColor: '#0A3A84', color: 'white' }}>Save</button>
@@ -75,4 +81,4 @@ function AddRecurringSettlements() {
         </>
     );
 }
-export default AddRecurringSettlements;
+export default AddManualSettlements;
