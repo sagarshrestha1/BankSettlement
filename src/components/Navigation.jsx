@@ -111,7 +111,7 @@ function Navigation() {
                                 borderRadius: '9px',
                                 padding: '4px'
                             }}>
-                                <a href="/recurringsettlements" className="nav-link"><span className="d-none d-sm-inline">Recurring Settlement </span></a></li>
+                                <a href="/recurringsettlement" className="nav-link"><span className="d-none d-sm-inline">Recurring Settlement </span></a></li>
                             <li className="nav-item m-1" style={{
                                 border: '1px solid #C1CAD7',
                                 borderRadius: '9px',
